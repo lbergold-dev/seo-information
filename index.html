@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO - Search Engine Optimization</title>
+    <meta
+      name="description"
+      content="Eine Einführung in die Grundlagen von SEO - Search Engine Optimization."
+    />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/blocks.css" />
+
+    <script src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="site">
+      <header class="container">
+        <h1 class="title">SEO - Search Engine Optimization</h1>
+      </header>
+
+      <main class="site__main stack">
+        <section class="hero container grid">
+          <div class="hero__text col-4 col-md-8 col-lg-5">
+            <h2 class="hero__title">Was ist SEO?</h2>
+            <p class="hero__description">
+              SEO (Search Engine Optimization) bedeutet, Inhalte so zu gestalten, dass sie in
+              <strong>Suchmaschinen besser gefunden werden</strong>
+              . Ziel ist es, sichtbarer zu werden und mehr Besucher zu erreichen. Dazu verbessert
+              man Struktur, Verständlichkeit und Qualität einer Website. Suchmaschinen sollen den
+              Inhalt leicht erfassen und richtig bewerten können.
+              <strong>Die Basis ist jedoch qualitativer Inhalt</strong>
+              - ohne diesen sind alle technischen Maßnahmen wirkungslos.
+            </p>
+          </div>
+          <img
+            src="./assets/hero-image.webp"
+            class="hero__image col-4 col-md-8 col-lg-7"
+            alt="Crawler, der das Web nach Inhalten durchsucht"
+          />
+        </section>
+
+        <section class="container">
+          <h2 class="single-title col-max">Wie funktioniert eine Suchmaschine?</h2>
+
+          <div class="grid">
+            <div class="card col-4 col-md-center col-lg-4">
+              <img
+                class="card__image"
+                src="./assets/card-image-1.webp"
+                loading="lazy"
+                alt="Crawler im Einsatz"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Crawler</h3>
+                <p class="card__text">
+                  Ein Crawler ist ein Programm der Suchmaschine, das ständig das Internet
+                  durchsucht, Webseiten besucht und ihre Inhalte und Daten liest. Er folgt Links
+                  zwischen Seiten, analysiert HTML-Strukturen und sammelt Informationen, die später
+                  im Index gespeichert werden. Crawler arbeiten automatisiert und kontinuierlich, um
+                  den Index aktuell zu halten.
+                </p>
+              </div>
+            </div>
+            <div class="card col-4 col-md-center col-lg-4">
+              <img
+                class="card__image"
+                src="./assets/card-image-2.webp"
+                loading="lazy"
+                alt="Diagramm: Index"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Index</h3>
+                <p class="card__text">
+                  Die gefundenen Webseiten des Crawlers werden im Index der Suchmaschine
+                  gespeichert. Er funktioniert wie ein großes Inhaltsverzeichnis, in dem alle Seiten
+                  abgelegt sind, damit sie später schnell wiedergefunden werden können.
+                </p>
+              </div>
+            </div>
+            <div class="card col-4 col-md-center col-lg-4">
+              <img
+                class="card__image"
+                src="./assets/card-image-3.webp"
+                loading="lazy"
+                alt="Diagramm: Ranking"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Ranking</h3>
+                <p class="card__text">
+                  Wenn jemand etwas sucht, vergleicht die Suchmaschine passende Seiten aus dem Index
+                  und bewertet sie anhand vieler Faktoren: Relevanz und Qualität der Inhalte,
+                  Autorität sowie Nutzer- und Techniksignale. Gute
+                  <strong>SEO</strong>
+                  erhöht die Chance, weiter oben zu erscheinen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <h2 class="single-title single-title--center col-max">SEO-Arten</h2>
+          <div class="grid">
+            <div class="info col-4 col-md-8 col-lg-center">
+              <h3 class="info__title">On-Page SEO</h3>
+              <p class="info__text">
+                On-Page SEO befasst sich mit den Faktoren, die innerhalb einer Website liegen. Es
+                umfasst die Optimierung von Inhalten, Struktur und Metadaten, um die Sichtbarkeit
+                und Ranking-Fähigkeit zu verbessern.
+              </p>
+            </div>
+
+            <div class="info col-4 col-md-8 col-lg-center">
+              <h3 class="info__title">Off-Page SEO</h3>
+              <p class="info__text">
+                Off-Page-SEO umfasst alle Maßnahmen außerhalb der eigenen Website, die das Ranking
+                in Suchmaschinen verbessern. Dazu gehören vor allem Backlinks von anderen
+                hochwertigen Seiten, die als Empfehlungen gelten (Backlinks: Links von anderen
+                Seiten auf deine eigene Seite). Auch Social-Media-Aktivitäten, Online-Reputation und
+                Erwähnungen auf anderen Plattformen stärken die Autorität einer Website.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="with-bg">
+          <div class="container grid">
+            <div class="info info--transparent col-max">
+              <h2 class="info__title">Wie setze ich das nun um?</h2>
+              <p class="info__text info__text--light">
+                Um SEO erfolgreich zu meistern, musst du kein Genie sein. Wenn du dich bereits ein
+                wenig mit HTML beschäftigt hast, gibt es ein paar simple Techniken der On-Page SEO,
+                die du beim Coden anwenden kannst. Diese haben bereits einen positiven Effekt auf
+                deine SEO-Performance.
+              </p>
+            </div>
+
+            <!-- 1) Titel, Meta-Tags und Keywords -->
+            <div class="code-example col-4 col-md-8 col-lg-center">
+              <h3 class="code-example__title">Titel, Meta-Tags und Keywords</h3>
+              <p class="code-example__description">
+                <strong>
+                  Viewport-Meta-Tag (&lt;meta name="viewport" content="width=device-width,
+                  initial-scale=1.0"&gt;)
+                </strong>
+                sorgt für die korrekte Skalierung auf mobilen Geräten. Die Suchmaschine bevorzugt
+                mobileoptimierte Seiten beim Ranking. Die meisten Menschen nutzen auch mobile Geräte
+                zum Surfen, daher muss deine Website auch auf kleinen Geräten funktionieren und gut
+                aussehen.
+                <br />
+                <br />
+                Durch den
+                <strong>Title Tag (&lt;title&gt; &lt;/title&gt;)</strong>
+                kann die Suchmaschine direkt das Hauptthema der Seite erkennen und sie dadurch
+                besser ranken. Daher sollte dieses auch das Hauptkeyword der Seite beinhalten.
+                Außerdem ist das der blaue Text in der Suchmaschine den der Nutzer als erster sieht.
+                <br />
+                <br />
+                Die
+                <strong>Meta Description (&lt;meta name="description" content="..."&gt;)</strong>
+                ist die graue Beschreibung der Seite, die in den Suchergebnissen unter dem Titel
+                angezeigt wird. Sie sollte interessant und informativ sein und Keywords enthalten.
+                Gelingt dir das, werden mehr Nutzer auf deine Seite klicken was wiederum zu einer
+                höheren Platzierung in den Suchergebnissen führt.
+                <br />
+                <br />
+                Doch was sind nun gute
+                <strong>Keywords</strong>
+                ? Hier solltest du darauf achten, dass sie sehr gut zum Thema der Seite passen und
+                am besten Wörter sind die Nutzer wirklich so suchen. Des Weiteren sollten sie nicht
+                zu viel Konkurrenz haben. Das kann sich oft natürlich als schwierig erweisen, daher
+                kann man sich z. B. mit lokalen Keywords behelfen (Keywords, die sich z. B. auf
+                deine Stadt beziehen). Wenn du das beachtest, weiß die Suchmaschine viel besser,
+                wann deine Seite relevant ist und kann sie daher besser ranken.
+              </p>
+
+              <pre class="code-example__code"><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Hauptkeyword - weitere keywords &lt;/title&gt;
+  &lt;meta name="description" content="Kurze Beschreibung der Seite,
+   sollte interessant und informativ sein und Keywords enthalten"&gt;
+&lt;/head&gt;</code></pre>
+            </div>
+
+            <!-- 2) Überschriften richtig strukturieren -->
+            <div class="code-example col-4 col-md-8 col-lg-center">
+              <h3 class="code-example__title">Überschriften richtig strukturieren</h3>
+              <p class="code-example__description">
+                Überschriften sind sehr wichtig für die Struktur der Seite. Dabei solltest du darauf
+                achten, dass es nur
+                <strong>eine &lt;h1&gt;-Überschrift</strong>
+                pro Unterseite gibt (technisch sind auch mehrere möglich). Diese sollte außerdem
+                nochmals Hauptkeywords der Seite beinhalten. Außerdem solltest du darauf achten,
+                dass anderen Überschriften einer
+                <strong>klaren Hierarchie</strong>
+                folgen. Damit ist gemeint, es sollte nie von z. B. &lt;h2&gt; auf &lt;h4&gt;
+                gesprungen werden. Durch diese Struktur versteht die Suchmaschine die Seite besser.
+                Das führt zu einer besseren Platzierung in den Suchergebnissen.
+              </p>
+
+              <pre class="code-example__code"><code>&lt;h1&gt;Pizzeria Napoli in Weiden&lt;/h1&gt;
+...
+&lt;h2&gt;Unsere Spezialitäten&lt;/h2&gt;
+  &lt;h3&gt;Pizza&lt;/h3&gt;
+
+    &lt;h4&gt;Vegetarische Pizza&lt;/h4&gt;
+    ...
+    &lt;h4&gt;Pizza mit nicht vegetarischen Zutaten&lt;/h4&gt;
+    ...
+  &lt;h3&gt;Salate&lt;/h3&gt;
+  ...
+  &lt;h3&gt;Desserts&lt;/h3&gt;
+  ...
+
+&lt;h2&gt;Lieferservice&lt;/h2&gt;
+  &lt;h3&gt;Lieferorte&lt;/h3&gt;
+  ...</code></pre>
+            </div>
+
+            <!-- 3) Alt-Texte für Bilder + WebP -->
+            <div class="code-example col-4 col-md-8 col-lg-center">
+              <h3 class="code-example__title">Alt-Texte für Bilder</h3>
+              <p class="code-example__description">
+                Bei Bildern, die man mit dem img-Tag einbindet, sollte man zwei Dinge beachten. Zum
+                einen sollte man einen
+                <strong>Alt-Text</strong>
+                hinzufügen. Dieser beschreibt kurz, was auf dem Bild zu sehen ist oder welche
+                Funktion es hat. Die Suchmaschine kann Bilder nicht sehen, daher hilft so ein Text
+                dabei, dass sie die Seite besser versteht. Dies hat wiederum einen positiven Effekt
+                auf die Platzierung in den Suchergebnissen. Außerdem wird dieses Bild so
+                wahrscheinlicher in der Bildersuche vorgeschlagen, was wiederum mehr potenzielle
+                Besucher auf deine Seite bringt.
+                <br />
+                <br />
+                Außerdem sollte man das
+                <strong>WebP-Format</strong>
+                verwenden. Dieses Dateiformat ist kleiner als JPG oder PNG und lädt schneller. Die
+                Suchmaschine bevorzugt Seiten, die schnell laden. Wenn du dich nun fragst, wie du
+                dein Bild in dieses Format umwandeln kannst, so kannst du dies mit einem
+                <a
+                  class="code-example__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://anywebp.com/jpeg-to-webp"
+                >
+                  Online-Converter
+                </a>
+                &nbsp;tun.
+              </p>
+
+              <pre
+                class="code-example__code"
+              ><code>&lt;img src="./pizza-margherita.webp" alt="Pizza Margherita"&gt;</code></pre>
+            </div>
+
+            <!-- 4) Semantische HTML-Tags verwenden -->
+            <div class="code-example col-4 col-md-8 col-lg-center">
+              <h3 class="code-example__title">Semantische HTML-Tags verwenden</h3>
+              <p class="code-example__description">
+                <strong>Semantische Tags</strong>
+                geben der Seite Bedeutung statt nur Layout. Du kennst bereits das &lt;p&gt;-Tag,
+                welches für Paragraphen steht. Es gibt aber noch viele weitere Tags, die du für
+                deine Seite verwenden kannst. Dabei gibt es das &lt;div&gt;-Tag (genauso wie das
+                &lt;p&gt;-Tag, nur statt Text kann man andere Tags darin einbinden bzw. gruppieren),
+                das für Container steht. Dieses Tag sollte man nur verwenden, wenn es kein besseres
+                Tag für den Inhalt gibt, da es nicht die Bedeutung des Inhalts widerspiegelt. Die
+                <strong>bessere Wahl sind oft die semantischen Tags</strong>
+                , da sie nach dem Motto Name ist gleich Programm funktionieren. Das ist wichtig,
+                damit die Suchmaschine wiederum die Struktur der Seite besser versteht. Daraus folgt
+                ein Vorteil beim Ranking in den Suchergebnissen.
+                <br />
+                <br />
+                Ein weiterer Grund sind
+                <strong>Screenreader</strong>
+                . Diese lesen die Seite für Menschen mit visuellen Beeinträchtigungen vor. Sie
+                benötigen eine klare Struktur, um die Seite zu verstehen. Durch die semantischen
+                Tags wird genau das ermöglicht. Dadurch machst du deine Seite auch für mehr Menschen
+                nutzbar.
+              </p>
+
+              <pre class="code-example__code"><code>&lt;body&gt;     
+  &lt;header&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;section&gt;...&lt;/section&gt;
+      &lt;section&gt;...&lt;/section&gt;
+    &lt;/article&gt;
+
+    &lt;section&gt;...&lt;/section&gt;
+    &lt;section&gt;...&lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="info info--transparent">
+            <h2 class="info__title">Fazit</h2>
+            <p class="info__text">
+              Natürlich gibt es noch mehr Techniken - auch mit CSS und JavaScript. Für den Einstieg
+              reichen die oben genannten HTML-Basics aber völlig aus.
+              <br />
+              <br />
+              SEO ist kein Hexenwerk. Achte beim Coden einfach auf diese Regeln und du wirst deine
+              Website spürbar verbessern. Aber denk dran: Die Basis ist und bleibt der qualitative
+              Inhalt. Ohne guten Inhalt bringen alle technischen Tricks nichts.
+            </p>
+          </div>
+        </section>
+
+        <section class="container grid">
+          <div class="info col-4 col-md-8 col-lg-center">
+            <h2 class="info__title">Wenn du noch mehr wissen willst</h2>
+            <p class="info__text">Hier findest du noch mehr Informationen zu SEO:</p>
+            <ul class="info__list">
+              <li class="info__item">
+                <a
+                  href="https://ahrefs.com/blog/how-do-search-engines-work/"
+                  class="info__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SEO Guide
+                </a>
+              </li>
+              <li class="info__item">
+                <a
+                  href="https://youtu.be/MYE6T_gd7H0?si=NAHePmB_WgkxdzVJ"
+                  class="info__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SEO In 5 Minutes
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site__footer">
+        <div class="bottom">
+          <p class="bottom__text">Erstellt von Leonhard Bergold</p>
+        </div>
+      </footer>
+
+      <button class="color-switcher color-switcher--light" data-color-switcher></button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+/*-- title --*/
+.title {
+  margin-top: var(--space-7);
+  text-align: center;
+  width: 100%;
+}
+
+/*-- hero --*/
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__title {
+  margin-bottom: var(--space-4);
+}
+
+.hero__image {
+  border-radius: var(--border-radius-4);
+}
+
+.hero__description {
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 64em) {
+  .hero__text {
+    padding: var(--space-6) 0;
+  }
+
+  .hero__image {
+    height: 100%;
+  }
+}
+
+/*-- single title --*/
+.single-title {
+  margin-bottom: var(--space-5);
+}
+
+.single-title--center {
+  text-align: center;
+}
+
+/*-- card --*/
+.card {
+  background-color: var(--color-bg-light);
+  padding: var(--space-6);
+  border-radius: var(--border-radius-3);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--box-shadow-1);
+}
+
+.card__image {
+  border-radius: var(--border-radius-3);
+  margin-bottom: var(--space-5);
+  aspect-ratio: 3 / 2;
+}
+.card__title {
+  margin-bottom: var(--space-1);
+}
+
+.card__text {
+  color: var(--color-text-muted);
+}
+
+/*-- info --*/
+.info {
+  background-color: var(--color-bg-light);
+  padding: var(--space-6);
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow-1);
+}
+
+.info--transparent {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.info__title {
+  margin-bottom: var(--space-3);
+}
+
+.info__text {
+  color: var(--color-text-muted);
+}
+
+.info__text--light {
+  color: var(--color-text-light);
+}
+
+.info__list {
+  margin-top: var(--space-4);
+}
+
+.info__item {
+  margin-bottom: var(--space-2);
+  list-style: disc;
+  list-style-position: inside;
+  margin-left: var(--space-4);
+}
+
+.info__link {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/*-- with bg --*/
+
+.with-bg {
+  padding: var(--space-7) 0;
+  background-color: var(--color-secondary);
+  color: hsl(211.17 47% 98%);
+  color: oklch(0.98 0.005 250);
+}
+
+/*-- code example --*/
+.code-example {
+  row-gap: 0;
+  margin-bottom: var(--space-5);
+}
+.code-example__title {
+  margin-bottom: var(--space-2);
+}
+
+.code-example__description {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
+  color: hsl(211.17 47% 98%);
+  color: oklch(0.98 0.005 250);
+}
+
+.code-example__code {
+  border-radius: var(--border-radius-2);
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+  padding: var(--space-4);
+  overflow-x: auto;
+}
+
+.code-example__link {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/*-- bottom --*/
+.bottom {
+  padding: var(--space-7) 0;
+  text-align: center;
+}
+
+.bottom__text {
+  color: var(--color-text-muted);
+}
+
+/*-- color switcher --*/
+.color-switcher {
+  position: fixed;
+  bottom: 3dvh;
+  right: 3.75%;
+  background-color: var(--color-bg-light);
+  padding: var(--space-3);
+  box-shadow: var(--box-shadow-2);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.8rem;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.color-switcher--dark {
+  background-image: url('../assets/half-moon.svg');
+}
+
+.color-switcher--light {
+  background-image: url('../assets/sun-light.svg');
+}
+
+@media (min-width: 1548px) {
+  .color-switcher {
+    right: calc(50dvw - 728px);
+  }
+}
